@@ -2,7 +2,7 @@
 import React from "react";
 function Contact() {
 
-    const [name, setName] = React.useState("");
+  const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [message, setMessage] = React.useState("");
 
@@ -73,8 +73,7 @@ function Contact() {
              Hire Me
            </h2>
            <p className="leading-relaxed mb-5">
-             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-             suscipit officia aspernatur veritatis. Asperiores, aliquid?
+             Backend Developer Trainee at FunctionUp.
            </p>
            <div className="relative mb-4">
              <label htmlFor="name" className="leading-7 text-sm text-gray-400">

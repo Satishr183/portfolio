@@ -1,17 +1,22 @@
+import TextSpan from "./TextSpan"
+import "./About.css"
+let sen="Hi, I'm Satish.".split("")
+let sen1="I love to build amazing Web applications.".split("")
  function About() {
     return (
         <section id="about">
         <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-              Hi, I'm Satish.
-              <br className="hidden lg:inline-block" />I love to build amazing
-              Web applications.
+            {sen.map((letter,index)=>{
+           return (<TextSpan className="text" key={index}>{letter===" " ? "\u00A0" : letter}</TextSpan>)
+           })}
+           <br className="hidden lg:inline-block" />{sen1.map((letter,index)=>{
+           return (<TextSpan className="text" key={index}>{letter===" " ? "\u00A0" : letter}</TextSpan>)
+           })}
             </h1>
             <p className="mb-8 leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-              laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-              Laborum, voluptas natus?
+            You can sharpen your mind, rewire your brain, provide people with great software.
             </p>
             <div className="flex justify-center">
               <a
